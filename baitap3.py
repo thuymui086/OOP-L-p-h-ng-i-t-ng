@@ -47,21 +47,17 @@ class LineSegment:
         else:
             raise ValueError("Tham số không hợp lệ!")
 
-    # ── Getter ────────────────────────────────────────────
+    
     def getD1(self):
         return self.__d1
 
     def getD2(self):
-        return self.__d2
-
-    # ── Setter ────────────────────────────────────────────
+        return self._d2
     def setD1(self, d1):
         self.__d1 = d1
 
     def setD2(self, d2):
         self.__d2 = d2
-
-    # ── Phương thức tiện ích ──────────────────────────────
     def length(self):
         """Tính độ dài đoạn thẳng."""
         dx = self.__d1.x - self.__d2.x
@@ -73,7 +69,6 @@ class LineSegment:
         print(f"LineSegment[{self.__d1} -> {self.__d2}]")
 
 
-# ──── Demo ────────────────────────────────────────────
 
 # 1) Hàm xây dựng mặc định
 seg1 = LineSegment()
