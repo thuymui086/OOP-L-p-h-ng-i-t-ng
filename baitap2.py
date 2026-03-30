@@ -1,5 +1,5 @@
 class NhanVien:
-    # Hằng số lớp (class variable)
+    
     LUONG_MAX = 50_000_000
 
     def __init__(self, ten_nhan_vien, luong_co_ban, he_so_luong):
@@ -7,7 +7,7 @@ class NhanVien:
         self.__luongCoBan  = luong_co_ban
         self.__heSoLuong   = he_so_luong
 
-    # ── Getter ────────────────────────────────────────────
+
     def getTenNhanVien(self):
         return self.__tenNhanVien
 
@@ -17,7 +17,7 @@ class NhanVien:
     def getHeSoLuong(self):
         return self.__heSoLuong
 
-    # ── Setter ────────────────────────────────────────────
+    
     def setTenNhanVien(self, value):
         self.__tenNhanVien = value
 
@@ -33,7 +33,7 @@ class NhanVien:
             return
         self.__heSoLuong = value
 
-    # ── Phương thức nghiệp vụ ─────────────────────────────
+    
     def tinhLuong(self):
         """Lương = lương cơ bản × hệ số lương."""
         return self.__luongCoBan * self.__heSoLuong
@@ -61,7 +61,7 @@ class NhanVien:
         return True
 
 
-# ──── Demo ────────────────────────────────────────────
+
 nv = NhanVien("Nguyễn Văn A", 10_000_000, 2.0)
 nv.inTTin()
 
